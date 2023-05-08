@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState, useEffect } from "react";
 import { Box, AppBar, Toolbar, styled, Stack, IconButton, Badge, Button } from '@mui/material';
 import PropTypes from 'prop-types';
 
@@ -12,14 +13,29 @@ interface ItemType {
 }
 
 const Header = ({toggleMobileSidebar}: ItemType) => {
+  const [isScrolled, setIsScrolled] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const threshold = 10; // adjust to your preference
+      setIsScrolled(window.scrollY > threshold);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   // const lgUp = useMediaQuery((theme) => theme.breakpoints.up('lg'));
   // const lgDown = useMediaQuery((theme) => theme.breakpoints.down('lg'));
 
 
   const AppBarStyled = styled(AppBar)(({ theme }) => ({
     boxShadow: 'none',
-    background: 'black',
+    background: isScrolled ? "rgba(255, 255, 255, 0.3)" : "black",
+    width: isScrolled ? "90%" : "100%",
+    borderRadius: isScrolled ? "24px": 0,
+    border: isScrolled ? "1px solid rgba(255, 255, 255, 0.2)" : 'none',
+    margin: 'auto',
     justifyContent: 'center',
     backdropFilter: 'blur(4px)',
     [theme.breakpoints.up('lg')]: {
