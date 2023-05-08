@@ -52,7 +52,6 @@ const Header = ({toggleMobileSidebar}: ItemType) => {
       <ToolbarStyled>
         <IconButton
           size="large"
-          aria-label="show 11 new notifications"
           color="inherit"
           aria-controls="msgs-menu"
           aria-haspopup="true"
