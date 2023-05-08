@@ -1,10 +1,10 @@
 .mui-style-1467uv1-MuiContainer-root {
-    max-width: 1920px;
+    max-width: 100vw;
     padding: 0px;
 }
 .mainDescription {
-    font-size: 7rem;
-    margin: 2rem 0;
+    font-size: 6.66vw;
+    margin: 2.5vw 0;
     display: inline-block;
 }
 .mui-style-1hr2cxi-MuiButtonBase-root-MuiMenuItem-root:hover {
@@ -12,6 +12,13 @@
     background: none;
 }
 .menuItemText span {
-    font-size: 2.5rem;
-    margin: 1rem 0;
+    font-size: 2.083vw;
+    margin: 0.83vw 0;
+}
+.menu-button:hover img {
+    content: url('../../public/images/logos/Menu_Black.svg');
+    background-color: white;
+    padding: 5px !important;
+    border-radius: 15px;
+    transition: all .5s ease-in-out;
 }
