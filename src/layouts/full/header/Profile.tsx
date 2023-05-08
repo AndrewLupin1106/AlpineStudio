@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import {
-  Avatar,
   Box,
   Menu,
-  Button,
   IconButton,
   MenuItem,
-  ListItemIcon,
   ListItemText,
   Typography
 } from "@mui/material";
@@ -15,6 +12,7 @@ import {
 import { IconListCheck, IconMail, IconUser } from "@tabler/icons-react";
 import Image from "next/image";
 import menu from "public/images/logos/Menu.svg";
+import close from "public/images/logos/close.svg";
 
 const Profile = () => {
   const [anchorEl2, setAnchorEl2] = useState(null);
@@ -24,6 +22,7 @@ const Profile = () => {
     setAnchorEl2(event.currentTarget);
     setMenuClicked(true);
 
+    console.log(event.currentTarget.getBoundingClientRect());
     setMenuButtonPosition(event.currentTarget.getBoundingClientRect());
   };
   const handleClose2 = () => {
@@ -83,28 +82,33 @@ const Profile = () => {
           "ul": {
             marginTop: '5rem'
           },
-          "li:hover":{
+          ".menuItems:hover":{
             display: 'table'
           },
-          "li div": {
+          ".menuItems div": {
             paddingBottom: '1px',
           },
-          "li div:hover": {
+          ".menuItems div:hover": {
             paddingBottom: 0,
             borderBottom: '1px solid white',
           },
         }}
       >
-        <MenuItem>
+        <MenuItem className="closeButton">
+          <ListItemText onClick={handleClose2}>
+            Закрыть
+          </ListItemText>
+        </MenuItem>
+        <MenuItem className="menuItems">
           <ListItemText className="menuItemText">Кейсы</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem className="menuItems">
           <ListItemText className="menuItemText">Услуги</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem className="menuItems">
           <ListItemText className="menuItemText">Отзывы</ListItemText>
         </MenuItem>
-        <MenuItem>
+        <MenuItem className="menuItems">
           <ListItemText className="menuItemText">Контакты</ListItemText>
         </MenuItem>
       </Menu>

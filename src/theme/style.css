@@ -22,3 +22,7 @@
     border-radius: 15px;
     transition: all .5s ease-in-out;
 }
+.closeButton span {
+    float: right;
+    margin-top: -4.16vw;
+}

@@ -2,8 +2,7 @@ import React from "react";
 import Link from "next/link";
 import {
   Typography,
-  Grid,
-  Divider,
+  Grid
 } from "@mui/material";
 import Image from "next/image";
 import designer from "public/images/profile/designer.png"
@@ -12,8 +11,8 @@ const Blog = () => {
   return (
     <Grid container spacing={3} >
       <Grid item xs={12} md={12} lg={12} style={{ backgroundImage: 'url(images/backgrounds/background.png)', backgroundSize: 'cover', width: '100%', height: '64.0625vw' }}>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={9} lg={9} style={{ color: 'white', margin: '13vw 4.16vw', zIndex: '2' }}>
+        <Grid container spacing={2} style={{ borderBottom: 'solid #D9D9D9 1px' }}>
+          <Grid item xs={12} md={9} lg={9} style={{ color: 'white', margin: '13vw 4.16vw 6.6vw 1vw', zIndex: '2' }}>
             <Typography className="mainDescription">
               Комплексное&nbsp;
             </Typography>
@@ -37,6 +36,11 @@ const Blog = () => {
             </Typography>
             <Typography className="mainDescription">
               Автоматизацию.
+            </Typography>
+            <Typography style={{ marginTop: '10vw' }}>
+              <Link href="#" style={{ color: 'white', textDecoration: 'none', fontSize: '1.66vw' }}>
+                Креативная студия дизайна и разработки.
+              </Link>
             </Typography>
           </Grid>
           <Grid item xs={12} md={3} lg={3} style={{ 
