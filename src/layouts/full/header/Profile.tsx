@@ -70,7 +70,17 @@ const Profile = () => {
           },
           "ul": {
             marginTop: '5rem'
-          }
+          },
+          "li:hover":{
+            display: 'table'
+          },
+          "li div": {
+            paddingBottom: '1px',
+          },
+          "li div:hover": {
+            paddingBottom: 0,
+            borderBottom: '1px solid white',
+          },
         }}
       >
         <MenuItem>
