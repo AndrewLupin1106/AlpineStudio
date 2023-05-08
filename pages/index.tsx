@@ -13,7 +13,7 @@ export default function Home() {
         <MainSection />
       </Grid>
       <Grid item xs={12} lg={12}>
-        <Projects />
+        
       </Grid>
     </Grid>
   );
