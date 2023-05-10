@@ -47,3 +47,17 @@ body::-webkit-scrollbar {
     align-items: center;
     font-size: 0.77vw;
 }
+.projectTagBorder {
+    text-decoration: none;
+    color: black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4166vw 1.25vw;
+    border-radius: 50px;
+    margin-left: 2vw;
+    margin-top: 1.7vw;
+    align-items: center;
+    font-size: 0.77vw;
+    border: black solid 1px;
+}

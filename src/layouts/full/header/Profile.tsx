@@ -17,12 +17,10 @@ import close from "public/images/logos/close.svg";
 const Profile = () => {
   const [anchorEl2, setAnchorEl2] = useState(null);
   const [menuClicked, setMenuClicked] = useState(false);
-  const [menuButtonPosition, setMenuButtonPosition] = useState({});
+  const [menuButtonPosition, setMenuButtonPosition] = useState({top: 0, left: 0});
   const handleClick2 = (event: any) => {
     setAnchorEl2(event.currentTarget);
     setMenuClicked(true);
-
-    console.log(event.currentTarget.getBoundingClientRect())
 
     setMenuButtonPosition({
       top: event.currentTarget.getBoundingClientRect().top,
@@ -70,7 +68,7 @@ const Profile = () => {
         onClose={handleClose2}
         anchorOrigin={{ horizontal: "right", vertical: "bottom" }}
         anchorReference="anchorPosition"
-        anchorPosition={menuButtonPosition}
+        anchorPosition={{ top: menuButtonPosition.top, left: menuButtonPosition.left }}
         transformOrigin={{ horizontal: "right", vertical: "top" }}
         sx={{
           "& .MuiMenu-paper": {

@@ -31,8 +31,31 @@ const Blog = () => {
                       Fullstack-разработка
                     </Link>
                   </Grid>
-                  <Grid item xs={12} md={12} lg={12}>
-
+                  <Grid item xs={12} md={4} lg={4} style={{ backgroundColor: 'white', width: '36.77vw', height: '16.14vw', margin: '14.6vw 0 0 60vw', borderRadius: '40px' }}>
+                    <Grid container>
+                      <Grid item xs={12} md={8} lg={8}>
+                        <Link href="#" className="projectTagBorder" style={{ width: '30%' }}>
+                          Refocus
+                        </Link>
+                      </Grid>
+                      <Grid item xs={12} md={3} lg={3} style={{ marginLeft: '2vw' }}>
+                        <Link href="#" className="projectTagBorder">
+                          2022
+                        </Link>
+                      </Grid>
+                    </Grid>
+                    <Grid container>
+                      <Grid item xs={12} md={9} lg={9}>
+                        <Link href="#" style={{ width: '30%', fontSize: '2.083vw', textDecoration: 'none', color: 'black', fontWeight: 'bold', margin: '9vw 0 0 0.5vw' }}>
+                          Путеводитель по IT
+                        </Link>
+                      </Grid>
+                      <Grid item xs={12} md={3} lg={3} style={{ marginLeft: '2vw' }}>
+                        <Link href="#">
+                          
+                        </Link>
+                      </Grid>
+                    </Grid>
                   </Grid>
                 </Grid>
               </Grid>
