@@ -61,8 +61,18 @@ const Blog = () => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid item xs={12} md={12} lg={12} style={{ backgroundImage: 'url(images/backgrounds/background2.png)', backgroundSize: 'cover', width: '100%', height: '56vw' }}>
-        
+      <Grid item xs={12} md={12} lg={12} style={{ backgroundImage: 'url(images/backgrounds/background2.png)', backgroundSize: 'cover', width: '100%', height: '56.9vw' }}>
+        <Grid container>
+           <Grid item xs={12} md={12} lg={12}>
+            <Grid container>
+              <Grid item xs={12} md={4} lg={4} style={{ color: 'white', marginLeft: '1vw' }}>
+                <Typography style={{ fontSize: '1.25vw', lineHeight: 'normal', fontFamily: 'system-ui' }}>
+                  Передадим ценности вашей компании с помощью разработки и продвижения сайта / сервиса / приложения
+                </Typography>
+              </Grid>
+            </Grid>
+           </Grid>
+        </Grid>
       </Grid>
     </Grid>
   );
