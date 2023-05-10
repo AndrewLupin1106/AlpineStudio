@@ -17,13 +17,17 @@ import close from "public/images/logos/close.svg";
 const Profile = () => {
   const [anchorEl2, setAnchorEl2] = useState(null);
   const [menuClicked, setMenuClicked] = useState(false);
-  const [menuButtonPosition, setMenuButtonPosition] = useState();
+  const [menuButtonPosition, setMenuButtonPosition] = useState({});
   const handleClick2 = (event: any) => {
     setAnchorEl2(event.currentTarget);
     setMenuClicked(true);
 
-    console.log(event.currentTarget.getBoundingClientRect());
-    setMenuButtonPosition(event.currentTarget.getBoundingClientRect());
+    console.log(event.currentTarget.getBoundingClientRect())
+
+    setMenuButtonPosition({
+      top: event.currentTarget.getBoundingClientRect().top,
+      left: event.currentTarget.getBoundingClientRect().left + 100
+    });
   };
   const handleClose2 = () => {
     setAnchorEl2(null);

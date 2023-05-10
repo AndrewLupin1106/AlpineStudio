@@ -12,7 +12,7 @@ const Blog = () => {
     <Grid container spacing={3} >
       <Grid item xs={12} md={12} lg={12} style={{ backgroundImage: 'url(images/backgrounds/background.png)', backgroundSize: 'cover', width: '100%', height: '64.0625vw' }}>
         <Grid container spacing={2} style={{ borderBottom: 'solid #D9D9D9 1px' }}>
-          <Grid item xs={12} md={9} lg={9} style={{ color: 'white', margin: '13vw 4.16vw 6.6vw 1vw', zIndex: '2' }}>
+          <Grid item xs={12} md={9} lg={9} style={{ color: 'white', margin: '13vw 4.16vw 6.5vw 1vw', zIndex: '2' }}>
             <Typography className="mainDescription">
               Комплексное&nbsp;
             </Typography>
