@@ -17,7 +17,7 @@ const Blog = () => {
   return (
     <Grid container spacing={3}>
       <Grid item xs={12} md={12} lg={12} style={{ paddingBottom: '2vw', borderBottom: '1px black solid' }}>
-        <Typography style={{ fontSize: '3.33vw', color: 'black', lineHeight: '140%', fontFamily: 'system-ui' }}>
+        <Typography style={{ fontSize: '3.33vw', color: 'black', lineHeight: '140%', fontFamily: 'system-ui', fontWeight: 'bold', marginLeft: '3vw' }}>
           Проекты, которыми мы гордимся
         </Typography>
       </Grid>
@@ -25,7 +25,16 @@ const Blog = () => {
           <Grid item xs={12} md={12} lg={12}>
             <Grid container>
               <Grid item xs={12} md={11} lg={11} style={{ backgroundImage: 'url(images/projects/refocus.png)', backgroundSize: 'cover', margin: '3vw auto', height: '36.8vw' }}>
-                hello
+                <Grid container>
+                  <Grid item xs={12} md={12} lg={12}>
+                    <Link href="#" className="projectTag">
+                      Fullstack-разработка
+                    </Link>
+                  </Grid>
+                  <Grid item xs={12} md={12} lg={12}>
+
+                  </Grid>
+                </Grid>
               </Grid>
             </Grid>
           </Grid>

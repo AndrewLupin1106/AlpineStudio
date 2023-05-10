@@ -33,3 +33,17 @@ body::-webkit-scrollbar {
     float: right;
     margin-top: -4.16vw;
 }
+.projectTag {
+    text-decoration: none;
+    color: black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 0.4166vw 1.25vw;
+    width: 11%;
+    border-radius: 50px;
+    margin-left: 2vw;
+    margin-top: 1.7vw;
+    align-items: center;
+    font-size: 0.77vw;
+}
