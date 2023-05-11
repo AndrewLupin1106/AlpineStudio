@@ -149,6 +149,11 @@ const Blog = () => {
                   </Grid>
                 </Grid>
               </Grid>
+              <Grid item xs={11} md={11} lg={11} style={{ backgroundImage: 'url(images/backgrounds/background3.png)', backgroundSize: '100%', margin: 'auto', height: '46vw', borderRadius: '45px', marginTop: '5vw' }}>
+                <Typography style={{ fontStyle: 'normal', fontWeight: 'bold', fontSize: '5vw', lineHeight: '130%', color: 'white', margin: '5vw 3vw 0 3vw' }}>
+                  Мы делаем не только узкие задачи по дизайну и разработке  💻,<br></br> но и в  дальнейшем занимаемся   продвижением  💡  и налаживанием бизнес-процессов в компании.
+                </Typography>
+              </Grid>
             </Grid>
           </Grid>
         </Grid>
